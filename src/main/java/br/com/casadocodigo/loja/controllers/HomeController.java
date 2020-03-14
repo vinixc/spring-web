@@ -18,7 +18,7 @@ public class HomeController {
 	private ProdutoDAO produtoDao;
 	
 	@RequestMapping("/")
-	@Cacheable(value = "produtosCache")
+	@Cacheable(value = "produtosHome")
 	public ModelAndView index() {
 		System.out.println("Entrando na Home da Casa do Codigo.");
 		List<Produto> produtos = produtoDao.listar();
