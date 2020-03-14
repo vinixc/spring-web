@@ -88,6 +88,10 @@ public class Produto {
 		this.sumarioPath = sumarioPath;
 	}
 	
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
 		return "Produto [titulo=" + titulo + ", descricao=" + descricao + ", paginas=" + paginas + "]";
