@@ -78,6 +78,7 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter{
 	
 	@Bean
 	public CacheManager cacheManager() {
+		
 		return new ConcurrentMapCacheManager();
 	}
 
