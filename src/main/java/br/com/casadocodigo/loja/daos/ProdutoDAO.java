@@ -22,7 +22,7 @@ public class ProdutoDAO {
 	}
 
 	public List<Produto> listar() {
-		return manager.createQuery("select p from Produto p", Produto.class).getResultList();
+		return manager.createQuery("select DISTINCT p from Produto p JOIN FETCH p.precos", Produto.class).getResultList();
 	}
 	
 	public Produto findById(Long id) {
