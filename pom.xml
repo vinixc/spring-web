@@ -157,8 +157,24 @@
 		<groupId>org.springframework.security</groupId>
 		<artifactId>spring-security-core</artifactId>
 		<version>4.0.0.RELEASE</version>
-	</dependency>	
-		
+	</dependency>
+	
+	
+	<!-- CONFIGURANDO CACHE GUAVA -->
+	<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+	<dependency>
+    	<groupId>com.google.guava</groupId>
+   		 <artifactId>guava</artifactId>
+   	 	<version>19.0</version>
+	</dependency>
+
+
+	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context-support</artifactId>
+    	<version>4.1.0.RELEASE</version>
+	</dependency>
+	
 	</dependencies>
 
 
