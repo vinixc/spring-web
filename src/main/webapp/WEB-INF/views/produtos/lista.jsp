@@ -44,12 +44,18 @@
 				</ul>
 				
 				<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">
+				<li>
+				<a href="#">
 					<security:authentication property="principal" var="usuario"/>
-					Usuário: ${usuario.username }
-				</a></li>
+					Usuário: ${usuario.username } 
+				</a>
+				</li>
+				<li>
+					<a href='<c:url value="/logout"/>'>Logout</a>
+				</li>
 				
 				</ul>
+				
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>
