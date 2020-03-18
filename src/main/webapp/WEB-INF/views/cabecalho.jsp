@@ -17,7 +17,7 @@
 						<li><a href="${s:mvcUrl('PC#listar').build() }" rel="nofollow">Lista de Produtos</a></li>
 						<li><a href="${s:mvcUrl('PC#form').build() }" rel="nofollow">Cadastro de Produtos</a></li>
 					</security:authorize>
-						<li><a href="${s:mvcUrl('CCC#itens').build() }" rel="nofollow"><fmt:message key="menu.carrinho"/></a></li>
+						<li><a href="${s:mvcUrl('CCC#itens').build() }" rel="nofollow"><fmt:message key="menu.carrinho"><fmt:param value="${carrinhoCompras.quantidade}"/></fmt:message></a></li>
 						<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow"><fmt:message key="menu.sobre"/></a></li>
 					<security:authorize access="isAuthenticated()">
 				      	 <li><a href="<c:url value="/logout" />">Sair</a></li>
