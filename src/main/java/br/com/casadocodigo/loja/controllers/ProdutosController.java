@@ -77,7 +77,10 @@ public class ProdutosController {
 		ModelAndView modelAndView = new ModelAndView("produtos/detalhe");
 		Produto produto = produtoDAO.findById(id);
 		modelAndView.addObject("produto", produto);
+				
 		return modelAndView;
 	}
+	
+	
 
 }
