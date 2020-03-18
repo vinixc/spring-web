@@ -194,6 +194,15 @@
     	<version>4.0.0.RELEASE</version>
     	<scope>test</scope>
 	</dependency>
+	
+	<!-- JAVA EMAIL -->
+	
+	<dependency>
+    	<groupId>javax.mail</groupId>
+    	<artifactId>mail</artifactId>
+    	<version>1.4.7</version>
+	</dependency>
+	
 	</dependencies>
 
 
